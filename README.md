@@ -1,7 +1,7 @@
 # Example project with Vue.js and Storyblok
 
 > In this example you can see how you can integrate Storyblok - an Api-based CMS - in a Vue.js project.
-> Image you have a single page application and want some pages editable with a CMS. This is now possible with Storyblok.
+> Imagine you have a single page application and want some pages editable with a CMS. This is now possible with Storyblok.
 
 ## Build Setup
 
