@@ -67,16 +67,16 @@ export default {
     }
   },
   created () {
-    window.storyblok.init({
+    this.$storyblok.init({
       accessToken: 'SG2TzS5TANp3YaiCefLY3Qtt'
     })
 
-    window.storyblok.on('change', () => {
+    this.$storyblok.on('change', () => {
       this.getStory('draft')
     })
 
-    window.storyblok.pingEditor(() => {
-      if (window.storyblok.isInEditor()) {
+    this.$storyblok.pingEditor(() => {
+      if (this.$storyblok.isInEditor()) {
         this.getStory('draft')
       } else {
         this.getStory('published')
@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     getStory (version) {
-      window.storyblok.get({slug: 'demo', version: version}, (data) => {
+      this.$storyblok.get({slug: 'demo', version: version}, (data) => {
         this.story = {content: {body: []}}
         this.$nextTick(() => {
           this.story = data.story
