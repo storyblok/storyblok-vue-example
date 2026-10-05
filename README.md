@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository is no longer maintained.
+> For a current Vue + Storyblok starter, use [blueprint-core-vue](https://github.com/storyblok/blueprint-core-vue).
+
 # Example project with Vue.js and Storyblok
 
 > In this example you can see how you can integrate Storyblok - an Api-based CMS - in a Vue.js project.
